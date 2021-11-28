@@ -9,7 +9,7 @@ let commandName = args[0];
 
 let cwd = process.cwd();
 
-require('./'+commandName)({
+require('./'+commandName+'.js')({
     'cwd':cwd,
     'args':args
 });

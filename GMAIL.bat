@@ -1,0 +1,1 @@
+start chrome "https://mail.google.com/"
