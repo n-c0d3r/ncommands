@@ -25,6 +25,4 @@ let input = {
     args: inputArgs
 }
 
-if (dow['date']){
-    require('./date');
-}
+require('./'+Object.keys(dow)[0]);

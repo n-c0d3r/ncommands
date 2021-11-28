@@ -12,4 +12,4 @@ let minutes = date_ob.getMinutes();
 
 let seconds = date_ob.getSeconds();
 
-console.log(hours + ":" + minutes + ":" + seconds + " (" + date + "-" + month + "-" + year + ")" );
+console.log("\x1b[36m"+hours + "\x1b[0m:" + "\x1b[36m"+minutes + "\x1b[0m:" + "\x1b[36m"+seconds + " \x1b[0m(" + "\x1b[36m"+date + "\x1b[0m-" + "\x1b[36m"+month + "\x1b[0m-" + "\x1b[36m"+year + "\x1b[0m)" );
