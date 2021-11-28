@@ -25,6 +25,6 @@ let input = {
     args: inputArgs
 }
 
-if (dow['time']){
-    require('./time');
+if (dow['date']){
+    require('./date');
 }
