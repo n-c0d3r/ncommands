@@ -1,15 +1,18 @@
-const child_process = require('child_process');
+module.exports = (command)=>{
 
-child_process.execFile(__dirname + '/CSGO.bat', (error, stdout, stderr) => {
-    if (error) {
-      console.error(`error: ${error.message}`);
-      return;
-    }
+  const child_process = require('child_process');
   
-    if (stderr) {
-      console.error(`stderr: ${stderr}`);
-      return;
-    }
-  
-    console.log(`stdout:\n${stdout}`);
-  });
+  child_process.execFile(__dirname + '/CSGO.bat', (error, stdout, stderr) => {
+      if (error) {
+        console.error(`error: ${error.message}`);
+        return;
+      }
+    
+      if (stderr) {
+        console.error(`stderr: ${stderr}`);
+        return;
+      }
+    
+      console.log(`stdout:\n${stdout}`);
+    });
+}
